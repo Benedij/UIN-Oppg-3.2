@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      #main {
+        max-width: 600px;
+        margin: 2rem auto;
+      }
+
+      #users {
+        list-style: none;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        gap: 0.5rem;
+      }
+
+      #users li {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        list-style-type: none;
+        margin: 0;
+        border: 1px solid #ccc;
+        padding: 1rem;
+      }
+    </style>
+    <!--<link rel="stylesheet" href="./src/styles.css" /> -->
+  </head>
+
+  <body>
+    <main id="main">
+      <div id="nameWrapper">
+        <label for="name">Søk etter navn</label>
+        <input id="name" type="search" placeholder="Søk etter navn" />
+      </div>
+      <br />
+      <div id="ageWrapper">
+        <label for="age">Filter etter alder</label>
+        <input id="age" type="text" placeholder="Sett minimumsalder" />
+        <button id="filter" type="button">Filter</button>
+      </div>
+      <ul id="users"></ul>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
